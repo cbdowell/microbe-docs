@@ -1,0 +1,21 @@
+{
+    "name": "microbe-website",
+    "version": "0.0.0",
+    "private": true,
+  "scripts": {
+    "start": "docusaurus-start",
+    "build": "docusaurus-build",
+    "publish": "docusaurus-publish",
+    "crowdin-upload": "crowdin --config ../crowdin.yaml upload sources --auto-update -b master",
+    "crowdin-download": "crowdin --config ../crowdin.yaml download -b master",
+    "write-translations": "docusaurus-write-translations",
+    "version": "docusaurus-version",
+    "rename-version": "docusaurus-rename-version"
+  },
+  "devDependencies": {
+    "docusaurus": "^1.0.4"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0"
+  }
+}
